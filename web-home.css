@@ -1,0 +1,385 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+    .big-container{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    border-radius: 10px;
+    animation: fade 3s ease-in-out forwards;
+    opacity: 0;
+  }
+  
+  
+  @keyframes fade {
+    to{opacity: 1;}
+  }
+  .container{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    margin-top: 0;
+  }
+  
+  ::-webkit-scrollbar{
+    display: none;
+  
+  }
+  
+  video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  header{
+    min-height: 60px;
+    height: 70px;
+    width: 100%;
+    border-bottom: 1px solid #fff8;
+ 
+    animation: fade 3s ease-in-out forwards;
+    animation-delay: 1s ;
+    opacity: 0;
+  }
+  
+  header .logo{
+    float: left;
+    margin-left: 15px;
+    margin-bottom: 3px;
+  
+  }
+  
+  header .logo h1 img{
+    color: white;
+    text-decoration: uppercase;
+    letter-spacing: 4px;
+    line-height: 60px;
+    text-shadow: 0 0 1px white;
+    border-radius: 10px;
+  }
+  
+    nav{
+    float: right;
+    margin-right: 20px;
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+  }
+  
+  nav ul{
+    margin-right: 30px;
+    min-width: 300px;
+  }
+  
+  nav ul li{
+    list-style: none;
+    display: inline-block;
+  }
+  
+  a{
+    text-decoration: none;
+    margin-top: 5PX;
+    padding: 10px 15px;
+    text-transform: uppercase;
+   display: inline-block;
+    
+  }
+  
+  .active{
+    margin-top: 10px;
+    background: teal;
+    border-radius: 20px;
+  }
+  
+  a:hover{
+    color: turquoise;
+  }
+  
+  nav form{
+    height: 30px;
+    width: 250px;
+    border: 1px solid teal;
+    background: #0007;
+    padding: 0 5px;
+    color: white;
+    outline: none;
+  }
+  
+  section{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    text-shadow: 0 0 5px white;
+    animation: fade 3s ease-in-out forwards;
+    animation-delay: 2s ;
+    opacity: 0;
+  }
+ 
+  
+  low{
+    width: 100%;
+    text-align: center;
+    color: white ;
+    animation: fade 3s ease-in-out forwards;
+    animation-delay: 2s ;
+    opacity: 0;
+  }
+  
+  low h2{
+    text-transform: uppercase;
+    letter-spacing: 10px;
+  }
+  
+  low p{
+    max-width: 600px;
+    margin: 15px auto;
+    line-height: 1.4;
+    letter-spacing: 2px;
+  }
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  @media (max-width: 1000px) {
+    header .logo,
+    header nav{
+      width:100%;
+      margin: 0;
+      text-align: center;
+    }
+    
+  }
+  
+  @media (max-width:850px) {
+    nav ul{
+      flex-direction: column;
+      min-width: 300px;
+      margin: 0;
+    }
+    nav ul a{
+      padding: 5px 10px;
+    }
+    
+  }
+  
+  
+  /*----under vedio style---*/
+    .main{
+    clear: both;
+    padding:40px;
+    
+  }
+  .h{
+    font-size:25px;
+    text-align:center;
+  }
+  .fl{
+    padding:20px 100px;
+    float:left;
+    text-align:center;
+  }
+  
+  .T2{
+    padding:20px 195px;
+  }
+  
+  
+  
+  .world{
+    margin:auto;
+    padding:0;
+    width: 90%;
+    clear: both;
+    position: relative;
+     text-align: center;
+    font-size: 75px;
+    line-height: 1.5;
+  }
+  .bgworld{
+    background-color: #0d534a;
+    position: absolute;
+    height: 160px;
+    width: 100%;
+    z-index: -1;
+    bottom: 0;
+  }
+  
+    .clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  
+    /*------footer style-------*/
+    
+    #footer {
+      background: black;
+      color: #ffffff;
+  }
+  #footer {
+  
+      display: flex;
+      justify-content: center;
+      padding-top: 40px;
+      border-top: 1px solid #E7E7E8;
+      z-index: 99;
+      position: relative;
+      
+      clear: both;
+      padding-top: 1.5em;
+      color: #aaaf;
+  }
+  #footer .footer {
+      max-width: 1032px;
+      width: 100%;
+      margin: 0 16px;
+  }
+  .footer-content {
+      width: 100%;
+  }
+  .footer-links {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+  }
+  .footer-col {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 50%;
+      margin: 0 0 40px 0;
+  }
+  .footer h6 {
+      margin: 0 0 8px;
+  }
+  .header6 {
+      font-family: 'BasisBlack', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif !important;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 900;
+  }
+  .t1 {
+      color: #924c0b;
+  }
+  h6 {
+      font-size: 16px;
+  }
+  
+  #footer a {
+      color:white;
+  }
+  
+  #footer a {
+      color: rgb(250, 241, 241);
+      border: 0;
+  }
+  .link {
+      font-family: 'BasisMedium', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+  }
+  a {
+      color: white;
+      color:white;
+      -o-transition: .3s;
+      -ms-transition: .3s;
+      -moz-transition: .3s;
+      -webkit-transition: .3s;
+      transition: .3s;
+      text-decoration: none;
+  }
+  .social {
+      display: flex;
+      margin-bottom: 16px;
+  }
+  ul, ol {
+      margin-bottom: 1.6em;
+  }
+  ol, ul {
+      list-style: none;
+  }
+  .language {
+      margin-bottom: 16px;
+  }
+  
+  .footer p {
+      margin: 0 0 .5em 0;
+  }
+  .caption {
+      font-family: 'BasisMedium', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif !important;
+      font-size: 12px;
+      font-style: normal;
+      line-height: 16px;
+  }
+  p {
+      margin: 0 0 1.7em;
+  }
+  .language select {
+      border: none;
+  }
+  
+  select {
+      font-family: 'BasisMedium', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif !important;
+      font-size: 16px;
+      line-height: 24px;
+      color: #121214;
+      font-weight: 500;
+  }
+  
+  
+  
+  body{
+    min-height: 100vh;
+    margin-top: 0;
+  }
+  
+  .copyright{
+    background-color:rgb(107, 46, 6);
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+    color: white;
+   }
+
+
+
+   @media (max-width:800px) {
+     .nav{
+       width: auto;
+     }
+     vedio{
+       display: flexbox;
+     }
+   }
+
+
+   @media (max-width:500px) {
+     .nav{
+       width: auto;
+     }
+     
+   }
